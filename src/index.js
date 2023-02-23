@@ -25,5 +25,5 @@ app.use("/user", userRouter);
 app.use("/api", todoRouter);
 
 app.listen(process.env.PORT || 3333, () => {
-  console.log("Server running on port", PORT);
+  console.log("Server running");
 });
