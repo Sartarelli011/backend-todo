@@ -1,6 +1,6 @@
 require("dotenv").config();
 const dbUrl = process.env.MONGO_CONNECTION;
-const PORT = process.env.PORT;
+
 const cors = require("cors");
 
 const express = require("express");
@@ -24,6 +24,6 @@ app.use("/user", userRouter);
 //rotas do todoForm get,post,put,delete
 app.use("/api", todoRouter);
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3333, () => {
   console.log("Server running on port", PORT);
 });
