@@ -1,5 +1,5 @@
 require("dotenv").config();
-const dbUrl = process.env.MONGO_CONNECTION_URL;
+const dbUrl = process.env.MONGO_CONNECTION;
 const PORT = process.env.PORT;
 const cors = require("cors");
 
